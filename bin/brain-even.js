@@ -9,7 +9,11 @@ const brainEven = () => {
         if (randomNumber%2 === 0 && answer === 'yes' || randomNumber%2 !== 0 && answer === 'no') {
             console.log('Correct!');
         } else {
-            return console.log('"yes" is wrong answer ;(. Correct answer was "no".');
+            let correctAnswer = 'no';
+            if (answer === 'no') {
+                correctAnswer = 'yes';
+            }
+            return console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".\n Let\'s try again, ${name}!`);
         }
         if (i === 3) {
             return console.log(`Congratulations, ${name}!`);
