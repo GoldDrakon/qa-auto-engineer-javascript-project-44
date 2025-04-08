@@ -1,8 +1,13 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
+  "type": "module",
   "description": "qa-auto-engineer-javascript-project-44",
   "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,11 +21,6 @@
     "url": "https://github.com/GoldDrakon/qa-auto-engineer-javascript-project-44/issues"
   },
   "homepage": "https://github.com/GoldDrakon/qa-auto-engineer-javascript-project-44#readme",
-  "type": "module",
-  "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
-  },
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
@@ -35,5 +35,6 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^16.0.0"
-  }
+  },
+  "keywords": []
 }
