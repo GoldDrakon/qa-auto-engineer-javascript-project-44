@@ -9,3 +9,5 @@ https://asciinema.org/connect/d746649a-638f-448c-9d49-8e2adb858306
 Игра: "Калькулятор":
 https://asciinema.org/a/PhYC0HOWBRS4KuDI6iqkVnRUq
 
+Игра "НОД"
+https://asciinema.org/a/A1PA5LXSR6DTL0UpnGW43FOlK
