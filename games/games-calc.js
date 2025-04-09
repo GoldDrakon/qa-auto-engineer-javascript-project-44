@@ -2,15 +2,15 @@ import readlineSync from 'readline-sync';
 import {name} from '../src/cli.js';
 
 function randomNumberRange(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.round(Math.random() * (max - min) + min);
   }
 
 function brainCalc() {
     console.log('What is the result of the expression?');
     let operator = [ '+' , '-' , '*' ];
     for (let i = 1; i <= 3; i += 1) {
-        let randomX = randomNumberRange(50, 100);
-        let randomY = randomNumberRange(1, 50);
+        let randomX = randomNumberRange(10, 20);
+        let randomY = randomNumberRange(1, 10);
         let randomOperator = operator[randomNumberRange(0, 2)];
         const correctAnswerCalc = eval(randomX + randomOperator + randomY);
         const answerCalc = readlineSync.question(`Question: ${randomX} ${randomOperator} ${randomY}  `);

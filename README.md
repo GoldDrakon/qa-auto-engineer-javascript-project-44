@@ -5,3 +5,7 @@
 
 Игра: "Проверка на чётность":
 https://asciinema.org/connect/d746649a-638f-448c-9d49-8e2adb858306
+
+Игра: "Калькулятор":
+https://asciinema.org/a/PhYC0HOWBRS4KuDI6iqkVnRUq
+
