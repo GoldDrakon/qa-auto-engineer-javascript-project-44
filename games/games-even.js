@@ -1,11 +1,5 @@
 import readlineSync from 'readline-sync';
-
-let name = '';
-const helloName = () => {
-  console.log('Welcome to the Brain Games!');
-  name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-};
+import {name} from '../src/cli.js';
 
 function brainEven() {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
@@ -27,6 +21,4 @@ function brainEven() {
     }
 }
 
-export {helloName, brainEven};
-//helloName();
-//brainEven();
+export {brainEven};

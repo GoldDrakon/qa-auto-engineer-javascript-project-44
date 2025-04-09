@@ -7,4 +7,4 @@ const helloName = () => {
   console.log(`Hello, ${name}!`);
 };
 
-export {helloName};
+export {name, helloName};
