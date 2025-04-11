@@ -15,3 +15,5 @@ https://asciinema.org/a/A1PA5LXSR6DTL0UpnGW43FOlK
 Games: Arithmetic progression
 https://asciinema.org/a/d7Epih8V7NysMnaLkTFHJozDI
 
+Games: Is it a prime number?
+https://asciinema.org/a/VloxhZxgTsKEMWl0IzqUAD0R0
