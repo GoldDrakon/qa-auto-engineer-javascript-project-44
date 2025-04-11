@@ -1,17 +1,14 @@
 import readlineSync from 'readline-sync';
 import {name} from '../src/cli.js';
-
-function randomNumberRangeProgression(min, max) {
-    return Math.round(Math.random() * (max - min) + min);
-  }
+import getRandomNumber from '../src/getRandomNumber.js';
 
 function brainProgression() {
     console.log('What number is missing in the progression?');
     for (let i = 1; i <= 3; i += 1) {
-        let randomLength = randomNumberRangeProgression(7, 12);
-        let randomSumProgression = randomNumberRangeProgression(5, 10);
-        let randomSecretNumberProgression = randomNumberRangeProgression(1, randomLength);
-        let nextNumberProgression = randomNumberRangeProgression(10, 30);
+        let randomLength = getRandomNumber(7, 12);
+        let randomSumProgression = getRandomNumber(5, 10);
+        let randomSecretNumberProgression = getRandomNumber(1, randomLength);
+        let nextNumberProgression = getRandomNumber(10, 30);
         let progression = nextNumberProgression;
         let secretNumber = 0;
         for (let j = 1; j <= randomLength; j += 1) {

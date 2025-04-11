@@ -1,15 +1,12 @@
 import readlineSync from 'readline-sync';
 import {name} from '../src/cli.js';
-
-function randomNumberRangeGcd(min, max) {
-    return Math.round(Math.random() * (max - min) + min);
-  }
+import getRandomNumber from '../src/getRandomNumber.js';
 
 function brainGcd() {
     console.log('Find the greatest common divisor of given numbers.');
     for (let i = 1; i <= 3; i += 1) {
-        let randomX = randomNumberRangeGcd(1, 50);
-        let randomY = randomNumberRangeGcd(1, 50);
+        let randomX = getRandomNumber(1, 50);
+        let randomY = getRandomNumber(1, 50);
         let correctAnswerGcdMassive = [];
         for (let y = 1; y <= 50; y += 1) {
             if (randomX % y === 0 && randomY % y === 0) {

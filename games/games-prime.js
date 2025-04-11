@@ -1,14 +1,11 @@
 import readlineSync from 'readline-sync';
 import {name} from '../src/cli.js';
-
-function randomNumberRangePrime(min, max) {
-    return Math.round(Math.random() * (max - min) + min);
-  }
+import getRandomNumber from '../src/getRandomNumber.js';
 
 function brainPrime() {
     console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     for (let i = 1; i <= 3; i += 1) {
-        let randomNumber = randomNumberRangePrime(2, 100);
+        let randomNumber = getRandomNumber(2, 100);
         let NumberMassive = [];
         for (let j = 2; j <= 100; j += 1) {
             if (randomNumber%j === 0) {
