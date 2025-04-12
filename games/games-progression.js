@@ -26,11 +26,8 @@ function brainProgression() {
     } else {
       return console.log(`"${answerProgression}" is wrong answer ;(. Correct answer was "${secretNumber}".\n Let's try again, ${name}!`);
     }
-    if (i === 3) {
-      return console.log(`Congratulations, ${name}!`);
-    }
   }
-return;
+return console.log(`Congratulations, ${name}!`);
 }
 
-export default brainProgression;
+  export default brainProgression;

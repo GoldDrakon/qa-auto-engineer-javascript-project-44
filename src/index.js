@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import {helloName} from './cli.js';
+import { helloName } from './cli.js';
 import brainEven from '../games/games-even.js';
 import brainPrime from '../games/games-prime.js';
 import brainCalc from '../games/games-calc.js';
@@ -35,7 +35,7 @@ const choiceGames = () => {
   } else {
     return console.log('Good bye!');
   }
-return console.log("we'll wait");
+  return console.log("we'll wait");
 };
 helloName();
 choiceGames();

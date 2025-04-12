@@ -20,11 +20,8 @@ function brainGcd() {
     } else {
       return console.log(`"${answerGcd}" is wrong answer ;(. Correct answer was "${correctAnswerGcd}".\n Let's try again, ${name}!`);
     }
-    if (i === 3) {
-      return console.log(`Congratulations, ${name}!`);
-    }
   }
-return;
+return console.log(`Congratulations, ${name}!`);
 }
 
-export default brainGcd;
+  export default brainGcd;
