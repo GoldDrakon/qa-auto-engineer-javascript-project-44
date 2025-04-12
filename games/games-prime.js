@@ -20,12 +20,13 @@ function brainPrime() {
     if ((answerPrime === 'yes' && NumberMassive.length === 1) || (answerPrime === 'no' && NumberMassive.length > 1)) {
       console.log('Correct!');
     } else {
-      return console.log(`"${answerPrime}" is wrong answer ;(. Correct answer was "${correctAnswerPrime}".\n Let\'s try again, ${name}!`);
+      return console.log(`"${answerPrime}" is wrong answer ;(. Correct answer was "${correctAnswerPrime}".\n Let's try again, ${name}!`);
     }
     if (i === 3) {
       return console.log(`Congratulations, ${name}!`);
     }
   }
+return;
 }
 
-export { brainPrime };
+export default brainPrime;

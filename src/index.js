@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import { helloName } from './cli.js';
-import { brainEven } from '../games/games-even.js';
-import { brainPrime } from '../games/games-prime.js';
-import { brainCalc } from '../games/games-calc.js';
-import { brainGcd } from '../games/games-gcd.js';
-import { brainProgression } from '../games/games-progression.js';
+import {helloName} from './cli.js';
+import brainEven from '../games/games-even.js';
+import brainPrime from '../games/games-prime.js';
+import brainCalc from '../games/games-calc.js';
+import brainGcd from '../games/games-gcd.js';
+import brainProgression from '../games/games-progression.js';
 
 const choiceGames = () => {
   console.log('What kind of game do you want to play?');
@@ -35,6 +35,7 @@ const choiceGames = () => {
   } else {
     return console.log('Good bye!');
   }
+return console.log("we'll wait");
 };
 helloName();
 choiceGames();

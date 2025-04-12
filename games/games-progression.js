@@ -21,15 +21,16 @@ function brainProgression() {
       }
     }
     const answerProgression = readlineSync.question(`Question: ${progression}  `);
-    if (parseInt(answerProgression) === secretNumber) {
+    if (parseInt(answerProgression, 10) === secretNumber) {
       console.log('Correct!');
     } else {
-      return console.log(`"${answerProgression}" is wrong answer ;(. Correct answer was "${secretNumber}".\n Let\'s try again, ${name}!`);
+      return console.log(`"${answerProgression}" is wrong answer ;(. Correct answer was "${secretNumber}".\n Let's try again, ${name}!`);
     }
     if (i === 3) {
       return console.log(`Congratulations, ${name}!`);
     }
   }
+return;
 }
 
-export { brainProgression };
+export default brainProgression;

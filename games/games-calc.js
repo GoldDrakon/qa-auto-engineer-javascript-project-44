@@ -14,12 +14,13 @@ function brainCalc() {
     if (answerCalc === correctAnswerCalc.toString()) {
       console.log('Correct!');
     } else {
-      return console.log(`"${answerCalc}" is wrong answer ;(. Correct answer was "${correctAnswerCalc}".\n Let\'s try again, ${name}!`);
+      return console.log(`"${answerCalc}" is wrong answer ;(. Correct answer was "${correctAnswerCalc}".\n Let's try again, ${name}!`);
     }
     if (i === 3) {
       return console.log(`Congratulations, ${name}!`);
     }
   }
+return;
 }
 
-export { brainCalc };
+export default brainCalc;

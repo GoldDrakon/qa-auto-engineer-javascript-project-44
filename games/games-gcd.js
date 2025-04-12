@@ -15,15 +15,16 @@ function brainGcd() {
     }
     const correctAnswerGcd = Math.max(...correctAnswerGcdMassive);
     const answerGcd = readlineSync.question(`Question: ${randomX} ${randomY}  `);
-    if (parseInt(answerGcd) === correctAnswerGcd) {
+    if (parseInt(answerGcd, 10) === correctAnswerGcd) {
       console.log('Correct!');
     } else {
-      return console.log(`"${answerGcd}" is wrong answer ;(. Correct answer was "${correctAnswerGcd}".\n Let\'s try again, ${name}!`);
+      return console.log(`"${answerGcd}" is wrong answer ;(. Correct answer was "${correctAnswerGcd}".\n Let's try again, ${name}!`);
     }
     if (i === 3) {
       return console.log(`Congratulations, ${name}!`);
     }
   }
+return;
 }
 
-export { brainGcd };
+export default brainGcd;
