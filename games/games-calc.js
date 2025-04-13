@@ -9,18 +9,18 @@ function brainCalc() {
     const randomX = getRandomNumber(10, 20);
     const randomY = getRandomNumber(1, 10);
     const randomOperator = operator[getRandomNumber(0, 2)];
-    let correctAnswerCalc
-    switch(randomOperator) {
+    let correctAnswerCalc;
+    switch (randomOperator) {
       case '+':
-        correctAnswerCalc =  randomX + randomY;
+        correctAnswerCalc = randomX + randomY;
         break;
       case '-':
-        correctAnswerCalc =  randomX - randomY;
+        correctAnswerCalc = randomX - randomY;
         break;
       case '*':
-        correctAnswerCalc =  randomX * randomY;
+        correctAnswerCalc = randomX * randomY;
         break;
-      }
+    }
     const answerCalc = readlineSync.question(`Question: ${randomX} ${randomOperator} ${randomY}  `);
     if (answerCalc === correctAnswerCalc.toString()) {
       console.log('Correct!');
