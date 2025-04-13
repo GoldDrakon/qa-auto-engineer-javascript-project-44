@@ -20,6 +20,8 @@ function brainCalc() {
       case '*':
         correctAnswerCalc = randomX * randomY;
         break;
+      default:
+        correctAnswerCalc = null;
     }
     const answerCalc = readlineSync.question(`Question: ${randomX} ${randomOperator} ${randomY}  `);
     if (answerCalc === correctAnswerCalc.toString()) {
