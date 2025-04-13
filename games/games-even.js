@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { userName } from '../src/cli.js';
 
 function brainEven() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  const name = userName();
   for (let i = 1; i <= 3; i += 1) {
     const randomNumber = Math.round(Math.random() * 1000);
     const answer = readlineSync.question(`Question: ${randomNumber}  `);

@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { userName } from '../src/cli.js';
 import getRandomNumber from '../src/getRandomNumber.js';
 
 function brainProgression() {
   console.log('What number is missing in the progression?');
+  const name = userName();
   for (let i = 1; i <= 3; i += 1) {
     const randomLength = getRandomNumber(7, 12);
     const randomSumProgression = getRandomNumber(5, 10);

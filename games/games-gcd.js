@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { userName } from '../src/cli.js';
 import getRandomNumber from '../src/getRandomNumber.js';
 
 function brainGcd() {
   console.log('Find the greatest common divisor of given numbers.');
+  const name = userName();
   for (let i = 1; i <= 3; i += 1) {
     const randomX = getRandomNumber(1, 50);
     const randomY = getRandomNumber(1, 50);

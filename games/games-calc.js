@@ -1,10 +1,11 @@
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { userName } from '../src/cli.js';
 import getRandomNumber from '../src/getRandomNumber.js';
 
 function brainCalc() {
   console.log('What is the result of the expression?');
   const operator = ['+', '-', '*'];
+  const name = userName();
   for (let i = 1; i <= 3; i += 1) {
     const randomX = getRandomNumber(10, 20);
     const randomY = getRandomNumber(1, 10);

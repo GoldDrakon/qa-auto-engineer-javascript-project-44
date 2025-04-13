@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
-import { name } from '../src/cli.js';
+import { userName } from '../src/cli.js';
 import getRandomNumber from '../src/getRandomNumber.js';
 
 function brainPrime() {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  const name = userName();
   for (let i = 1; i <= 3; i += 1) {
     const randomNumber = getRandomNumber(2, 100);
     const NumberMassive = [];
