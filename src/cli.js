@@ -6,8 +6,6 @@ const helloName = () => {
   name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 };
-const userName = () => {
-  return name;
-};
+const userName = () => name;
 
 export { userName, helloName };
