@@ -23,7 +23,7 @@ function brainPrime() {
       return console.log(`"${answerPrime}" is wrong answer ;(. Correct answer was "${correctAnswerPrime}".\n Let's try again, ${name}!`);
     }
   }
-return console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 }
 
-  export default brainPrime;
+export default brainPrime;

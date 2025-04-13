@@ -21,7 +21,7 @@ function brainGcd() {
       return console.log(`"${answerGcd}" is wrong answer ;(. Correct answer was "${correctAnswerGcd}".\n Let's try again, ${name}!`);
     }
   }
-return console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 }
 
-  export default brainGcd;
+export default brainGcd;

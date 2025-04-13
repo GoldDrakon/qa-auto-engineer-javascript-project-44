@@ -9,7 +9,18 @@ function brainCalc() {
     const randomX = getRandomNumber(10, 20);
     const randomY = getRandomNumber(1, 10);
     const randomOperator = operator[getRandomNumber(0, 2)];
-    const correctAnswerCalc = eval(randomX + randomOperator + randomY);
+    let correctAnswerCalc
+    switch(randomOperator) {
+      case '+':
+        correctAnswerCalc =  randomX + randomY;
+        break;
+      case '-':
+        correctAnswerCalc =  randomX - randomY;
+        break;
+      case '*':
+        correctAnswerCalc =  randomX * randomY;
+        break;
+      }
     const answerCalc = readlineSync.question(`Question: ${randomX} ${randomOperator} ${randomY}  `);
     if (answerCalc === correctAnswerCalc.toString()) {
       console.log('Correct!');
@@ -17,7 +28,7 @@ function brainCalc() {
       return console.log(`"${answerCalc}" is wrong answer ;(. Correct answer was "${correctAnswerCalc}".\n Let's try again, ${name}!`);
     }
   }
-return console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 }
 
-  export default brainCalc;
+export default brainCalc;
